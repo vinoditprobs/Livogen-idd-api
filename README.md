@@ -18,7 +18,6 @@ This project marks my first foray into Node.js development, focusing on server-s
    npm install
 
    nodemon server.js
-
    
 ## API Usage
 To generate a personalized video or banner, make a POST request to the server with the following body fields:
