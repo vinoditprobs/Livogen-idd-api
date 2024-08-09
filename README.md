@@ -14,9 +14,3 @@ This project marks my first foray into Node.js development, focusing on server-s
 1. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/your-username/livogen-campaign-api.git
-   
-   ```bash
-   npm install
-
-   ```bash
-   nodemon server.js
