@@ -12,9 +12,19 @@ This project marks my first foray into Node.js development, focusing on server-s
 ## Installation
 
 1. Clone the repository to your local machine:
-```bash
+   ```bash
    git clone https://github.com/your-username/livogen-campaign-api.git
+   npm install
+   nodemon server.js
 
-```bash
-   git clone https://github.com/your-username/livogen-campaign-api.git
+   
+## API Usage
+To generate a personalized video or banner, make a POST request to the server with the following body fields:
+
+- **FullName**: The full name of the doctor.
+- **Phone**: The doctor's address..
+- **Address**: Preferred language for the content (en for English, hi for Hindi).
+- **Language**: The path where the generated media will be saved..
+- **FilePathName**: The full name of the doctor.
+- **Photo**: TUpload the doctor's photo to include in the banner and video.
 
