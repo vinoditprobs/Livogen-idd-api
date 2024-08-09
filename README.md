@@ -1,4 +1,4 @@
-# Livogen Iron Deficiency Campaign API
+# Livogen Iron Deficiency Campaign (Node API)
 
 ## Project Overview
 This project is part of a campaign where doctors can enter their personal information to receive personalized banners and videos branded with Livogen. The backend API is built using Node.js and ffmpeg to dynamically generate these custom assets based on the input provided.
