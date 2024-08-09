@@ -12,7 +12,7 @@ const uploadBlob = async (containerClient, blobName, filePath) => {
 
 const generateVideoBanner = async (DrNameImg, DrPhoneImg, DrAddressImg, DrPhotoPath, fileName, Language, qrCode, progressCallback) => {
 
-  const { bannerContainerClient, videoContainerClient } = await connectToBlobStorage();
+ // const { bannerContainerClient, videoContainerClient } = await connectToBlobStorage();
 
   const reportProgress = (message) => {
     if (progressCallback && typeof progressCallback === 'function') {
@@ -150,8 +150,8 @@ const generateVideoBanner = async (DrNameImg, DrPhoneImg, DrAddressImg, DrPhotoP
       .then(async () => {
         console.log('Video and Banner Generated successfully');
         reportProgress('Video and banner generated successfully.');
-        await uploadBlob(videoContainerClient, outputVideo, outputVideo);
-        await uploadBlob(bannerContainerClient, outputBanner, outputBanner);
+       // await uploadBlob(videoContainerClient, outputVideo, outputVideo);
+       // await uploadBlob(bannerContainerClient, outputBanner, outputBanner);
         fs.unlinkSync(outputVideo); // Remove the temporary video file
         fs.unlinkSync(outputBanner); // Remove the temporary banner file
         resolve();
